@@ -1,0 +1,25 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input [(ngModel)]="persona.nombre" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombre" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Apellido</label>
+          <input [(ngModel)]="persona.apellido" type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+        </div>
+        <div class="form-group">
+            <label for="nombre">Telefono Fijo</label>
+            <input [(ngModel)]="persona.telefonofijo" type="text" class="form-control" id="telefonofijo" name="telefonofijo" aria-describedby="telfijo" placeholder="telefono fijo">
+          </div>
+          <div class="form-group">
+            <label for="nombre">Fecha Nacimiento</label>
+            <input [(ngModel)]="persona.fecnacimiento" type="date" class="form-control" id="fecnacimiento" name="fecnacimiento" aria-describedby="fnacimiento" placeholder="fnacimiento">
+          </div>
+          <div class="form-group">
+            <label for="documento">Documento</label>
+            <input [(ngModel)]="persona.documento" type="text" class="form-control" id="documento" name="documento" aria-describedby="documento" placeholder="documento">
+          </div>
+        <button type="submit" (click)="actualizar(persona)" class="btn btn-primary">Actualizar</button>
+      </form>
+    </div>

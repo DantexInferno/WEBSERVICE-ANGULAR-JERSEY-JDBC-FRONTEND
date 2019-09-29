@@ -1,0 +1,28 @@
+<div class="table-wrapper-scroll-y my-custom-scrollbar" >
+    <table class="table table-bordered table-striped mb-0 container">
+        <thead class="thead-dark">
+          <tr>
+            
+            <th scope="col">Numero Linea</th>
+            <th scope="col">Persona ID</th>
+            <th scope="col">Estado</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let linea of lineas">
+            
+            <td>{{linea.numerolinea}}</td>
+            <td>{{linea.personaid}}</td>
+            <td>{{linea.estado}}</td>
+            
+            
+            <td>
+              <button (click)="editar(linea)" class="btn btn-warning">Editar</button>
+              <button (click)="eliminar(linea)"  class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>

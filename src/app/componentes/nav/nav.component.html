@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+  <a class="navbar-brand" href="#">InterMovil</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Registros
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item " [routerLink]="['/registrarUsuario']" routerLinkActive="router-link-active">Registrar
+            Usuario</a>
+          <a class="dropdown-item " [routerLink]="['/registrarLinea']" routerLinkActive="router-link-active">Registrar
+            Linea</a>
+            <a class="dropdown-item " [routerLink]="['/registrarEquipo']" routerLinkActive="router-link-active">Registrar
+              Equipo</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Consultas
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item " [routerLink]="['/consultarUsuario']" routerLinkActive="router-link-active">Consultar
+            Usuario</a>
+          <a class="dropdown-item " [routerLink]="['/consultarLinea']" routerLinkActive="router-link-active">Consultar
+            Linea</a>
+            <a class="dropdown-item " [routerLink]="['/consultarFactura']" routerLinkActive="router-link-active">Consultar
+              Factura</a>
+              <a class="dropdown-item " [routerLink]="['/consultarEquipo']" routerLinkActive="router-link-active">Consultar
+                Equipo</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,32 @@
+<div class="table-wrapper-scroll-y my-custom-scrollbar" >
+        <table class="table table-bordered table-striped mb-0 container">
+            <thead class="thead-dark">
+              <tr>
+               
+                <th scope="col">Equipo Serial</th>
+                <th scope="col">Numero Linea</th>          
+                <th scope="col">Marca</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let equipo of equipos">
+                
+                <td>{{equipo.equiposerial}}</td>
+                <td>{{equipo.numlinea}}</td>
+                <td>{{equipo.marca}}</td>
+                <td>{{equipo.descripcion}}</td>
+                <td>{{equipo.estado}}</td>
+                
+                
+                <td>
+                  <button (click)="editar(equipo)" class="btn btn-warning">Editar</button>
+                  <button (click)="eliminar(equipo)"  class="btn btn-danger">Eliminar</button>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>

@@ -1,0 +1,27 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="nombre">Numero Factura</label>
+      <input [(ngModel)]="factura.numfactura" type="text" class="form-control" id="numfactura" name="numfactura"
+        aria-describedby="numfactura" placeholder="numero factura">
+    </div>
+    <div class="form-group">
+      <label for="numlinea">Numero Linea</label>
+      <input [(ngModel)]="factura.numlinea" type="text" class="form-control" id="numlinea" name="numlinea"
+        aria-describedby="numlinea" placeholder="numero linea">
+    </div>
+    <div class="form-group">
+      <label for="fecha">Fecha Emision</label>
+      <input [(ngModel)]="factura.fechaemision" type="text" class="form-control" id="fecha" name="fecha"
+        placeholder="Fecha emision">
+    </div>
+    <div class="form-group">
+      <label for="valor">Valor Factura</label>
+      <input [(ngModel)]="factura.facvalor" type="text" class="form-control" id="valor" name="valor"
+        aria-describedby="valor" placeholder="valor factura">
+    </div>
+
+    <button type="submit" (click)="actualizar(factura)" class="btn btn-primary">Registrar</button>
+  </form>
+</div>
+    
